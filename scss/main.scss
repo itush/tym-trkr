@@ -1,82 +1,105 @@
 @import 'config';
 @import 'responsive';
 
-body{
+body {
     background: $Verydarkblue;
     color: white;
 }
 
-main{
+main {
     display: grid;
     width: 80vw;
-    margin: 10em auto;
+    margin: 5em auto;
     grid-template-columns: repeat(4, 18vw);
-    grid-template-rows: repeat(2, auto); 
-    grid-template-areas:"user work play study "
-                        "user exercise social selfcare ";
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "user work play study "
+        "user exercise social selfcare ";
     column-gap: 1em;
-    row-gap: 1em;
+    row-gap: 2em;
 }
-.user{
+
+.user {
     grid-area: user;
     border-radius: 1em;
     background: $Darkblue;
-    
-    
-    .user-top{
+
+
+    .user-top {
         background: $Blue;
         border-radius: 1em;
         padding: 1em;
 
-        img{
+        img {
             max-width: 50%;
             border: .2em solid white;
             border-radius: 50%;
         }
-        .para1{
+
+        .para1 {
             margin: 2em 0 0 0;
         }
     }
 
-    .user-btm{
-        // background: $Darkblue;;
+    .user-btm {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         padding: 1em;
 
-        ul{
-            list-style-type: none;
+        button {
+            margin: .5em 0em;
+            background: $Darkblue;
+            border: none;
+            outline: none;
+            color: $Desaturatedblue;
+
         }
 
-        a{
-            text-decoration: none;
+        button:hover {
             color: white;
-            display: block;
-            margin: 1em 0;
+            cursor: pointer;
         }
-    }   
+    }
 }
 
-.work{
+.work {
     grid-area: work;
     background-color: $Lighredwork;
     background-image: url('../images/icon-work.svg');
     background-repeat: no-repeat;
     background-position: 100% 0%;
     border-radius: 1em;
+    position: relative;
 
-    .work-content{       
+
+    .work-content {
         background: $Darkblue;
+        width: 18vw;
+        min-height: 28vh;
+        position: absolute;
         border-radius: 1em;
-        margin: 3.5em 0 0 0;
+        margin: 2em 0 0 0;
         padding: 1em;
-        header{
+
+        header {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
+
+        p {
+            font-size: xx-large;
+        }
+
+    }
+
+    .work-content:hover {
+        background: $Desaturatedblue;
+        cursor: pointer;
     }
 }
 
-.play{
+.play {
     grid-area: play;
     background-color: $Softbluepla;
     background-image: url('../images/icon-play.svg');
@@ -84,22 +107,29 @@ main{
     background-position: 100% 0%;
     border-radius: 1em;
 
-    .play-content{       
+    .play-content {
         background: $Darkblue;
+        width: 18vw;
+        min-height: 28vh;
+        position: absolute;
         border-radius: 1em;
-        margin: 3.5em 0 0 0;
+        margin: 2em 0 0 0;
         padding: 1em;
-        header{
+
+        header {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
     }
 
-    
+    .play-content:hover {
+        background: $Desaturatedblue;
+        cursor: pointer;
+    }
 }
 
-.study{
+.study {
     grid-area: study;
     background-color: $Lightredstudy;
     background-image: url('../images/icon-study.svg');
@@ -107,20 +137,29 @@ main{
     background-position: 100% 0%;
     border-radius: 1em;
 
-    .study-content{       
+    .study-content {
         background: $Darkblue;
+        width: 18vw;
+        min-height: 28vh;
+        position: absolute;
         border-radius: 1em;
-        margin: 3.5em 0 0 0;
+        margin: 2em 0 0 0;
         padding: 1em;
-        header{
+
+        header {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
     }
+
+    .study-content:hover {
+        background: $Desaturatedblue;
+        cursor: pointer;
+    }
 }
 
-.exercise{
+.exercise {
     grid-area: exercise;
     background-color: $Limegreenexercise;
     background-image: url('../images/icon-exercise.svg');
@@ -128,20 +167,29 @@ main{
     background-position: 100% 0%;
     border-radius: 1em;
 
-    .exercise-content{       
+    .exercise-content {
         background: $Darkblue;
+        width: 18vw;
+        min-height: 28vh;
+        position: absolute;
         border-radius: 1em;
-        margin: 3.5em 0 0 0;
+        margin: 2em 0 0 0;
         padding: 1em;
-        header{
+
+        header {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
     }
+
+    .exercise-content:hover {
+        background: $Desaturatedblue;
+        cursor: pointer;
+    }
 }
 
-.social{
+.social {
     grid-area: social;
     background-color: $Violetsocial;
     background-image: url('../images/icon-social.svg');
@@ -149,20 +197,29 @@ main{
     background-position: 100% 0%;
     border-radius: 1em;
 
-    .social-content{       
+    .social-content {
         background: $Darkblue;
+        width: 18vw;
+        min-height: 28vh;
+        position: absolute;
         border-radius: 1em;
-        margin: 3.5em 0 0 0;
+        margin: 2em 0 0 0;
         padding: 1em;
-        header{
+
+        header {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
     }
+
+    .social-content:hover {
+        background: $Desaturatedblue;
+        cursor: pointer;
+    }
 }
 
-.selfcare{
+.selfcare {
     grid-area: selfcare;
     background-color: $Softorangeselfcare;
     background-image: url('../images/icon-self-care.svg');
@@ -170,18 +227,33 @@ main{
     background-position: 100% 0%;
     border-radius: 1em;
 
-    .selfcare-content{       
+    .selfcare-content {
         background: $Darkblue;
+        width: 18vw;
+        min-height: 28vh;
+        position: absolute;
         border-radius: 1em;
-        margin: 3.5em 0 0 0;
+        margin: 2em 0 0 0;
         padding: 1em;
-        header{
+
+        header {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
     }
+
+    .selfcare-content:hover {
+        background: $Desaturatedblue;
+        cursor: pointer;
+    }
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
