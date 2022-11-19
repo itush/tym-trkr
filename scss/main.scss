@@ -1,0 +1,187 @@
+@import 'config';
+@import 'responsive';
+
+body{
+    background: $Verydarkblue;
+    color: white;
+}
+
+main{
+    display: grid;
+    width: 80vw;
+    margin: 10em auto;
+    grid-template-columns: repeat(4, 18vw);
+    grid-template-rows: repeat(2, auto); 
+    grid-template-areas:"user work play study "
+                        "user exercise social selfcare ";
+    column-gap: 1em;
+    row-gap: 1em;
+}
+.user{
+    grid-area: user;
+    border-radius: 1em;
+    background: $Darkblue;
+    
+    
+    .user-top{
+        background: $Blue;
+        border-radius: 1em;
+        padding: 1em;
+
+        img{
+            max-width: 50%;
+            border: .2em solid white;
+            border-radius: 50%;
+        }
+        .para1{
+            margin: 2em 0 0 0;
+        }
+    }
+
+    .user-btm{
+        // background: $Darkblue;;
+        padding: 1em;
+
+        ul{
+            list-style-type: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            margin: 1em 0;
+        }
+    }   
+}
+
+.work{
+    grid-area: work;
+    background-color: $Lighredwork;
+    background-image: url('../images/icon-work.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    border-radius: 1em;
+
+    .work-content{       
+        background: $Darkblue;
+        border-radius: 1em;
+        margin: 3.5em 0 0 0;
+        padding: 1em;
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.play{
+    grid-area: play;
+    background-color: $Softbluepla;
+    background-image: url('../images/icon-play.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    border-radius: 1em;
+
+    .play-content{       
+        background: $Darkblue;
+        border-radius: 1em;
+        margin: 3.5em 0 0 0;
+        padding: 1em;
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    
+}
+
+.study{
+    grid-area: study;
+    background-color: $Lightredstudy;
+    background-image: url('../images/icon-study.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    border-radius: 1em;
+
+    .study-content{       
+        background: $Darkblue;
+        border-radius: 1em;
+        margin: 3.5em 0 0 0;
+        padding: 1em;
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.exercise{
+    grid-area: exercise;
+    background-color: $Limegreenexercise;
+    background-image: url('../images/icon-exercise.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    border-radius: 1em;
+
+    .exercise-content{       
+        background: $Darkblue;
+        border-radius: 1em;
+        margin: 3.5em 0 0 0;
+        padding: 1em;
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.social{
+    grid-area: social;
+    background-color: $Violetsocial;
+    background-image: url('../images/icon-social.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    border-radius: 1em;
+
+    .social-content{       
+        background: $Darkblue;
+        border-radius: 1em;
+        margin: 3.5em 0 0 0;
+        padding: 1em;
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.selfcare{
+    grid-area: selfcare;
+    background-color: $Softorangeselfcare;
+    background-image: url('../images/icon-self-care.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    border-radius: 1em;
+
+    .selfcare-content{       
+        background: $Darkblue;
+        border-radius: 1em;
+        margin: 3.5em 0 0 0;
+        padding: 1em;
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

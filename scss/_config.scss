@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Rubik', sans-serif;
+
+}
+
+$Blue: hsl(246, 80%, 60%);
+$Lighredwork: hsl(15, 100%, 70%);
+$Softbluepla: hsl(195, 74%, 62%);
+$Lightredstudy: hsl(348, 100%, 68%);
+$Limegreenexercise: hsl(145, 58%, 55%);
+$Violetsocial: hsl(264, 64%, 52%);
+$Softorangeselfcare: hsl(43, 84%, 65%);
+$Verydarkblue: hsl(226, 43%, 10%);
+$Darkblue: hsl(235, 46%, 20%);
+$Desaturatedblue: hsl(235, 45%, 61%);
+$PaleBlue: hsl(236, 100%, 87%);
+
+@mixin media-sm {
+    @media screen and (max-width: 600px) {
+      @content;
+    }
+  }
