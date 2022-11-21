@@ -8,7 +8,6 @@
 
 body{
 font-family: 'Rubik', sans-serif;
-
 }
 
 $Blue: hsl(246, 80%, 60%);
@@ -22,6 +21,7 @@ $Verydarkblue: hsl(226, 43%, 10%);
 $Darkblue: hsl(235, 46%, 20%);
 $Desaturatedblue: hsl(235, 45%, 61%);
 $PaleBlue: hsl(236, 100%, 87%);
+$HoverBlue: hsl(240, 43%, 53%);
 
 @mixin media-sm {
     @media screen and (max-width: 600px) {
