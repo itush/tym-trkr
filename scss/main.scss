@@ -1,5 +1,4 @@
 @import 'config';
-@import 'responsive';
 
 body {
     background: $Verydarkblue;
@@ -19,57 +18,54 @@ main {
     row-gap: 2em;
 }
 
-
 .user {
     grid-area: user;
     border-radius: 1em;
     background: $Darkblue;
+}
 
-    .user-top {
-        background: $Blue;
-        width: 18vw;
-        height: 54vh;
-        border-radius: 1em;
-        padding: 1em;
+.user-top {
+    background: $Blue;
+    width: 18vw;
+    height: 54vh;
+    border-radius: 1em;
+    padding: 1em;
+}
 
-        img {
-            max-width: 50%;
-            border: .2em solid white;
-            border-radius: 50%;
-        }
+#avatar {
+    max-width: 50%;
+    border: .2em solid white;
+    border-radius: 50%;
+}
 
-        .para1 {
-            margin: 2em 0 0 0;
-            color: $PaleBlue;
-            font-size: 12px;
-        }
+.para1 {
+    margin: 2em 0 0 0;
+    color: $PaleBlue;
+    font-size: 12px;
+}
 
-        h1 {
-            font-weight: 100;
-            padding: 0 0 2em 0;
-        }
-    }
+h1 {
+    font-weight: 100;
+    padding: 0 0 2em 0;
+}
 
-    .user-btm {
-        width: 18vw;
-        height: 30vh;
-        padding: 1em;
+.user-btm {
+    padding: 1em;
+}
 
-        button {
-            display: block;
-            font-size: larger;
-            margin: .5em 0em;
-            background: $Darkblue;
-            border: none;
-            outline: none;
-            color: $Desaturatedblue;
-        }
+button {
+    display: block;
+    font-size: larger;
+    margin: .5em 0em;
+    background: $Darkblue;
+    border: none;
+    outline: none;
+    color: $Desaturatedblue;
+}
 
-        button:hover {
-            color: white;
-            cursor: pointer;
-        }
-    }
+button:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .w-current,
@@ -96,6 +92,13 @@ svg:hover path {
     fill: white;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: larger;
+}
+
 .work {
     grid-area: work;
     width: 18vw;
@@ -106,28 +109,21 @@ svg:hover path {
     background-position: 100% 0%;
     border-radius: 1em;
     position: relative;
+}
 
-    .work-content {
-        background: $Darkblue;
-        width: 18vw;
-        height: 32vh;
-        position: absolute;
-        border-radius: 1em;
-        margin: 2em 0 0 0;
-        padding: 1em;
+.work-content {
+    background: $Darkblue;
+    width: 18vw;
+    height: 32vh;
+    position: absolute;
+    border-radius: 1em;
+    margin: 2em 0 0 0;
+    padding: 1em;
+}
 
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-    }
-
-    .work-content:hover {
-        background: $HoverBlue;
-        cursor: pointer;
-    }
+.work-content:hover {
+    background: $HoverBlue;
+    cursor: pointer;
 }
 
 .play {
@@ -139,27 +135,22 @@ svg:hover path {
     background-repeat: no-repeat;
     background-position: 100% 0%;
     border-radius: 1em;
+    position: relative;
+}
 
-    .play-content {
-        background: $Darkblue;
-        width: 18vw;
-        height: 32vh;
-        position: absolute;
-        border-radius: 1em;
-        margin: 2em 0 0 0;
-        padding: 1em;
+.play-content {
+    background: $Darkblue;
+    width: 18vw;
+    height: 32vh;
+    position: absolute;
+    border-radius: 1em;
+    margin: 2em 0 0 0;
+    padding: 1em;
+}
 
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    }
-
-    .play-content:hover {
-        background: $HoverBlue;
-        cursor: pointer;
-    }
+.play-content:hover {
+    background: $HoverBlue;
+    cursor: pointer;
 }
 
 .study {
@@ -171,27 +162,22 @@ svg:hover path {
     background-repeat: no-repeat;
     background-position: 100% 0%;
     border-radius: 1em;
+    position: relative;
+}
 
-    .study-content {
-        background: $Darkblue;
-        width: 18vw;
-        height: 32vh;
-        position: absolute;
-        border-radius: 1em;
-        margin: 2em 0 0 0;
-        padding: 1em;
+.study-content {
+    background: $Darkblue;
+    width: 18vw;
+    height: 32vh;
+    position: absolute;
+    border-radius: 1em;
+    margin: 2em 0 0 0;
+    padding: 1em;
+}
 
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    }
-
-    .study-content:hover {
-        background: $HoverBlue;
-        cursor: pointer;
-    }
+.study-content:hover {
+    background: $HoverBlue;
+    cursor: pointer;
 }
 
 .exercise {
@@ -203,27 +189,22 @@ svg:hover path {
     background-repeat: no-repeat;
     background-position: 100% 0%;
     border-radius: 1em;
+    position: relative;
+}
 
-    .exercise-content {
-        background: $Darkblue;
-        width: 18vw;
-        height: 32vh;
-        position: absolute;
-        border-radius: 1em;
-        margin: 2em 0 0 0;
-        padding: 1em;
+.exercise-content {
+    background: $Darkblue;
+    width: 18vw;
+    height: 32vh;
+    position: absolute;
+    border-radius: 1em;
+    margin: 2em 0 0 0;
+    padding: 1em;
+}
 
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    }
-
-    .exercise-content:hover {
-        background: $HoverBlue;
-        cursor: pointer;
-    }
+.exercise-content:hover {
+    background: $HoverBlue;
+    cursor: pointer;
 }
 
 .social {
@@ -235,27 +216,22 @@ svg:hover path {
     background-repeat: no-repeat;
     background-position: 100% 0%;
     border-radius: 1em;
+    position: relative;
+}
 
-    .social-content {
-        background: $Darkblue;
-        width: 18vw;
-        height: 32vh;
-        position: absolute;
-        border-radius: 1em;
-        margin: 2em 0 0 0;
-        padding: 1em;
+.social-content {
+    background: $Darkblue;
+    width: 18vw;
+    height: 32vh;
+    position: absolute;
+    border-radius: 1em;
+    margin: 2em 0 0 0;
+    padding: 1em;
+}
 
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    }
-
-    .social-content:hover {
-        background: $HoverBlue;
-        cursor: pointer;
-    }
+.social-content:hover {
+    background: $HoverBlue;
+    cursor: pointer;
 }
 
 .selfcare {
@@ -267,27 +243,22 @@ svg:hover path {
     background-repeat: no-repeat;
     background-position: 100% 0%;
     border-radius: 1em;
+    position: relative;
+}
 
-    .selfcare-content {
-        background: $Darkblue;
-        width: 18vw;
-        height: 32vh;
-        position: absolute;
-        border-radius: 1em;
-        margin: 2em 0 0 0;
-        padding: 1em;
+.selfcare-content {
+    background: $Darkblue;
+    width: 18vw;
+    height: 32vh;
+    position: absolute;
+    border-radius: 1em;
+    margin: 2em 0 0 0;
+    padding: 1em;
+}
 
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    }
-
-    .selfcare-content:hover {
-        background: $HoverBlue;
-        cursor: pointer;
-    }
+.selfcare-content:hover {
+    background: $HoverBlue;
+    cursor: pointer;
 }
 
 .attribution {
@@ -297,4 +268,54 @@ svg:hover path {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 80vw;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas: "user"
+            "work"
+            "play"
+            "study"
+            "exercise"
+            "social"
+            "selfcare";
+            row-gap: 6em;
+    }
+.user{
+    margin: 0em 0em -4em 0em;
+}
+    .user-top {
+        width: 80vw;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: large;
+    }
+
+    #avatar {
+        max-width: 30%;
+    }
+
+    .user-btm {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .hrs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .work, .play, .study, .exercise, .social, .selfcare {
+        width: 80vw;
+    }
+
+    .work-content, .play-content, .study-content, .exercise-content, .social-content, .selfcare-content {        
+        width: 80vw;
+    }
 }
