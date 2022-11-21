@@ -9,6 +9,7 @@ body {
 main {
     display: grid;
     width: 80vw;
+    height: 80vh;
     margin: 5em auto;
     grid-template-columns: repeat(4, 18vw);
     grid-template-rows: repeat(2, auto);
@@ -18,14 +19,16 @@ main {
     row-gap: 2em;
 }
 
+
 .user {
     grid-area: user;
     border-radius: 1em;
     background: $Darkblue;
 
-
     .user-top {
         background: $Blue;
+        width: 18vw;
+        height: 54vh;
         border-radius: 1em;
         padding: 1em;
 
@@ -37,22 +40,29 @@ main {
 
         .para1 {
             margin: 2em 0 0 0;
+            color: $PaleBlue;
+            font-size: 12px;
+        }
+
+        h1 {
+            font-weight: 100;
+            padding: 0 0 2em 0;
         }
     }
 
     .user-btm {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        width: 18vw;
+        height: 30vh;
         padding: 1em;
 
         button {
+            display: block;
+            font-size: larger;
             margin: .5em 0em;
             background: $Darkblue;
             border: none;
             outline: none;
             color: $Desaturatedblue;
-
         }
 
         button:hover {
@@ -62,8 +72,34 @@ main {
     }
 }
 
+.w-current,
+.p-current,
+.s-current,
+.e-current,
+.so-current,
+.se-current {
+    font-size: xx-large;
+    font-weight: 100;
+    margin: .5em 0;
+}
+
+.w-previous,
+.p-previous,
+.s-previous,
+.e-previous,
+.so-previous,
+.se-previous {
+    color: $Desaturatedblue;
+}
+
+svg:hover path {
+    fill: white;
+}
+
 .work {
     grid-area: work;
+    width: 18vw;
+    height: 22vh;
     background-color: $Lighredwork;
     background-image: url('../images/icon-work.svg');
     background-repeat: no-repeat;
@@ -71,11 +107,10 @@ main {
     border-radius: 1em;
     position: relative;
 
-
     .work-content {
         background: $Darkblue;
         width: 18vw;
-        min-height: 28vh;
+        height: 32vh;
         position: absolute;
         border-radius: 1em;
         margin: 2em 0 0 0;
@@ -85,10 +120,6 @@ main {
             display: flex;
             align-items: center;
             justify-content: space-between;
-        }
-
-        p {
-            font-size: xx-large;
         }
 
     }
@@ -101,6 +132,8 @@ main {
 
 .play {
     grid-area: play;
+    width: 18vw;
+    height: 22vh;
     background-color: $Softbluepla;
     background-image: url('../images/icon-play.svg');
     background-repeat: no-repeat;
@@ -110,7 +143,7 @@ main {
     .play-content {
         background: $Darkblue;
         width: 18vw;
-        min-height: 28vh;
+        height: 32vh;
         position: absolute;
         border-radius: 1em;
         margin: 2em 0 0 0;
@@ -131,6 +164,8 @@ main {
 
 .study {
     grid-area: study;
+    width: 18vw;
+    height: 22vh;
     background-color: $Lightredstudy;
     background-image: url('../images/icon-study.svg');
     background-repeat: no-repeat;
@@ -140,7 +175,7 @@ main {
     .study-content {
         background: $Darkblue;
         width: 18vw;
-        min-height: 28vh;
+        height: 32vh;
         position: absolute;
         border-radius: 1em;
         margin: 2em 0 0 0;
@@ -161,6 +196,8 @@ main {
 
 .exercise {
     grid-area: exercise;
+    width: 18vw;
+    height: 22vh;
     background-color: $Limegreenexercise;
     background-image: url('../images/icon-exercise.svg');
     background-repeat: no-repeat;
@@ -170,7 +207,7 @@ main {
     .exercise-content {
         background: $Darkblue;
         width: 18vw;
-        min-height: 28vh;
+        height: 32vh;
         position: absolute;
         border-radius: 1em;
         margin: 2em 0 0 0;
@@ -191,6 +228,8 @@ main {
 
 .social {
     grid-area: social;
+    width: 18vw;
+    height: 22vh;
     background-color: $Violetsocial;
     background-image: url('../images/icon-social.svg');
     background-repeat: no-repeat;
@@ -200,7 +239,7 @@ main {
     .social-content {
         background: $Darkblue;
         width: 18vw;
-        min-height: 28vh;
+        height: 32vh;
         position: absolute;
         border-radius: 1em;
         margin: 2em 0 0 0;
@@ -221,6 +260,8 @@ main {
 
 .selfcare {
     grid-area: selfcare;
+    width: 18vw;
+    height: 22vh;
     background-color: $Softorangeselfcare;
     background-image: url('../images/icon-self-care.svg');
     background-repeat: no-repeat;
@@ -230,7 +271,7 @@ main {
     .selfcare-content {
         background: $Darkblue;
         width: 18vw;
-        min-height: 28vh;
+        height: 32vh;
         position: absolute;
         border-radius: 1em;
         margin: 2em 0 0 0;
